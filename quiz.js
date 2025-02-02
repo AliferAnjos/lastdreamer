@@ -1,3 +1,5 @@
+alert("Se o B.A. (Brocha Antes) é gestor. Eu sou astronauta!")
+
 const perguntas = [
    {
       pergunta: `Se você pudesse salvar um Analista de Redes do fuzilamento ou comprar uma Ferrari.
