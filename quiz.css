@@ -1,0 +1,149 @@
+#carinha {
+    color: #ad83be;
+    text-align: center;
+    font-family: 'Courier New', monospace; /* Ensures monospace font for proper ASCII art formatting */
+    white-space: pre; /* Keeps line breaks and spaces intact */
+    max-width: 100%; /* Prevents the container from stretching too far */
+    overflow-x: auto; /* Allows horizontal scrolling if the content is too wide */
+    font-size: 5px
+}
+
+#titulo{
+    color: #ad83be;
+    text-align: center;
+    font-family: 'Courier New', monospace; /* Ensures monospace font for proper ASCII art formatting */
+    white-space: pre; /* Keeps line breaks and spaces intact */
+    max-width: 100%; /* Prevents the container from stretching too far */
+    overflow-x: auto; /* Allows horizontal scrolling if the content is too wide */
+    font-size: 14px;
+}
+
+#pergunta {
+    color: white;
+    text-align: center;
+    font-family: "Times New Roman";
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-line 
+    
+}
+
+#button-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os botões */
+    margin-top: 10px;
+    width: 100%; /* Garante que ocupa toda a largura disponível */
+}
+
+/* Estilização dos botões */
+#button-container button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ad83be;
+    color: #080808;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    #button-container {
+        gap: 10px;
+    }
+
+    #button-container button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+#feedback {
+    color:white;
+    max-width: 100%;
+    overflow-x: 100%;
+    text-align: center;
+    
+}
+
+/* Container dos botões */
+/* Container dos botões */
+#frenteverso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+}
+
+/* Estilo do botão 'Voltar' */
+#back {
+    position: absolute;
+    top: 50%;  /* Centraliza verticalmente */
+    left: 10px;  /* Deixa bem próximo à borda esquerda */
+    transform: translateY(-50%);  /* Ajusta o centro vertical */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ad83be;
+    color: #080808;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do botão 'Próximo' */
+#next {
+    position: absolute;
+    top: 50%;  /* Centraliza verticalmente */
+    right: 1px;  /* Deixa bem próximo à borda direita */
+    transform: translateY(-50%);  /* Ajusta o centro vertical */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ad83be;
+    color: #080808;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    /* Manter os botões próximos da borda também no celular */
+    #back {
+        left: 5px;  /* Mais próximo da borda esquerda no celular */
+    }
+
+    #next {
+        right: 5px;  /* Mais próximo da borda direita no celular */
+    }
+
+    #back, #next {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+
+body {
+    background: #080808;
+    
+
+}
